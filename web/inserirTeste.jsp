@@ -12,12 +12,14 @@
         <h1>JSP TESTE</h1>
 
         <%
-
+                  String convStrInt = "";
             try {
                 TesteDTO objtestedto = new TesteDTO();
                 objtestedto.setNome(request.getParameter("nome"));
                 objtestedto.setTipo(request.getParameter("tipo"));
-                objtestedto.setQuantidade(request.getIntHeader("quantidade"));
+                convStrInt = request.getParameter("quantidade");
+                
+                objtestedto.setQuantidade(Integer.parseInt(convStrInt));
 
                 testeCadDAO objtestedao = new testeCadDAO();
                 objtestedao.CadastrarTeste(objtestedto);

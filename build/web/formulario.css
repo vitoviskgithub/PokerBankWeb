@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+form {
+width: 50%;
+margin: 40px 0;
+border: 5px solid black;
+padding: 20px;
+}
