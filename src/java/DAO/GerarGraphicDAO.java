@@ -188,4 +188,9 @@ public class GerarGraphicDAO {
         }
 
     }
+    
+    public void janelaNovaURL() throws IOException{
+        //abrir pdf usando o Runtime e executando no PROMPT comando CMD
+            Runtime.getRuntime().exec("rundll32 SHELL32.DLL,ShellExec_RunDLL " + "cmd /c " + "start chrome https://vitoviskgithub.github.io/links/Graphic_user.html");
+    }
 }

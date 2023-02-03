@@ -12,7 +12,7 @@
         
         <%
             GerarGraphicDAO objgraphdao = new GerarGraphicDAO();
-            objgraphdao.janelaNovaImagemUser();
+            objgraphdao.janelaNovaURL();
             
             JOptionPane.showMessageDialog(null, "Visualizando gráfico");
 
