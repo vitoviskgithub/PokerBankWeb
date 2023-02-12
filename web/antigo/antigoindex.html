@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>POKER BANK WEB</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    @import url("formulario.css");
+    </style>
+    </head>
+    <body>
+         <br>
+    <table width="500" border="4" align="left" cellpadding="1" cellspacing="1" id="tableCenter" bordercolor="#000000">
+          <tr>
+            <td width="490" align="center">
+            <font face="Arial Black, Gadget, sans-serif" size="+3" color="#0066CC">
+            POKER BANK WEB </font>
+            </td>
+          </tr>
+          <tr>
+            <td align="center"> 
+          
+<form id="frmInfo" action="comandoInfoUser.jsp" method="POST" >
+            <label>
+            <font face="Arial, Helvetica, sans-serif" size="3px">
+            <strong>Informações do Usuário</strong> </font>
+            <br><br>
+            <font face="Arial, Helvetica, sans-serif" size="3px">
+            ID
+            </font>
+            </label><br>
+            <input type="text" name="idInf" size="10">
+            <br><br>
+
+<button type="submit" >
+     VISUALIZAR
+     </button>            
+            </form>
+         
+    <form id="frmRelatorio" action="comandoRelUser.jsp" method="POST" >
+            <label>
+            <font face="Arial, Helvetica, sans-serif" size="3px">
+            <strong>Relatório do Usuário</strong> </font>
+            <br><br>
+            <font face="Arial, Helvetica, sans-serif" size="3px">
+            ID 
+            </font>
+            </label><br>
+            <input type="text" name="idRel" size="10">
+            <br><br>
+
+<button type="submit" >
+     RELATÓRIO
+     </button>
+            
+            </form>
+            
+                 
+    <form id="frmGraphic" action="comandoGraphUser.jsp" method="POST" >
+            <label>
+            <font face="Arial, Helvetica, sans-serif" size="3px">
+            <strong>Gráfico do Usuário</strong> </font>
+            <br><br>
+            <font face="Arial, Helvetica, sans-serif" size="3px">
+            ID 
+            </font>
+            </label><br>
+            <input type="text" name="idGra" size="10">
+            <br><br>
+        <button type="submit" >
+     GRÁFICO
+     </button>          
+          </form>
+ <form  id="frmGraphic" action="comandoViewGraUser.jsp" method="POST">
+  <button type="submit" >
+     VISUALIZAR
+     </button>
+            </form>
+            
+ 
+      <tr>
+            <td align="center"><font face="Comic Sans MS, cursive" size="-1" color="#0033FF">2023 vs1.0.0</font></td>
+          </tr>
+        </table>
+      
+</body>
+</html>
