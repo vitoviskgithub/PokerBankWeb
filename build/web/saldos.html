@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALDOS</title>
+    <link rel="stylesheet" href="saldos.css">
+</head>
+
+<body>
+    <section class="acima">
+        <p>Os saldos são postados e atualizados sempre, na
+            página principal você encontra na seção Poker
+            os links para verificar as informações.
+            Os saldos postados são de investidores que já
+            pertecem ao grupo de investidores do POKER BANK.
+            Como se tornar um investidor? Na seção Usuários
+            existem mais informações.<br>
+        </p>
+        <center><a href="usuarios.html" target="_self">SAIBA MAIS</a></center>
+
+        <!--BOTÃO PARA FORMULÁRIO-->
+        <button class="btn1" onclick="abrirModal()">FORMULÁRIO</button>
+
+        <!--a div janelaModal é para o overlay(fundo
+            do site mais escuro)-->
+        <div class="janelaModal" id="janelaModalID">
+            <!--a div modal é justamente a janelinha-->
+            <div class="modal"><!--PODE SE ADICIONAR O CONTEÚDO QUE QUISER DENTRO DO MODAL-->
+                <button class="fechar" id="fecharID">X</button>
+                <!--CONTEÚDO DA JANELA MODAL-->
+                <h1>Saldo por usuário</h1><br>
+                <form action="saldo.jsp">
+                    <button>VEJA SEU SALDO (ID)</button><br>
+                    <p id="txtForm1">Resultado</p>
+                    <input type="text" id="saldoUser" name="saldoUser" value="TESTE">
+
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </section>
+
+    <section class="abaixo">
+
+        <h1>APRENDA POKER ONLINE GRATUITAMENTE</h1>
+        <p>
+            Os conceitos básicos do poker ensinados por mim
+            de forma prática e didática.
+            Eu criei um mini-curso com aulas explicativas
+            para que você aprenda o básico desse maravilhoso
+            jogo.
+            Esses vídeos se encontram no meu TWICH, basta clicar
+            no link abaixo e acessar meu twich.<br><br>
+            <center><a href="#" target="_blank">(Curta e siga a minha página TWICH)</a></center>
+        </p>
+    </section>
+    <!--Na seção Usuários além do formulário janela Modal
+teremos uma aba para comentar sobre o Poker e alguns
+dos seus eventos
+ESCOLHER OUTRA ABA PARA POSTAR RESULTADOS MEUS-->
+</body>
+
+</html>
